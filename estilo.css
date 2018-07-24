@@ -1,0 +1,235 @@
+/* ===================== BARRA DE NAVEGAÇÃO ==================== */
+
+/* FAZENDO A CAPA OCUPAR 100 DA TELA */
+body, html, .capa
+{
+    height: 100%;
+}
+body
+{
+    background: url('imagens/capa.png') , url('imagens/ruido.png'), linear-gradient(50deg, #ff4169, #7c26f8);
+    font-family: Helvetica,Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.img-logo
+{
+    height: 40px;
+    width: 132px;
+    /* PASSANDO O DISPLAY INLINE PARA BLOCK */
+    display: block;
+
+    background:url('imagens/spotify.svg') no-repeat;
+
+    /* DEFININDO QUE A IMAGEM DE FUNDO TERA O MESMO TAMANHO DO SPAN(OU DA TAG) */
+    background-size: contain;
+    color: transparent;
+}
+
+.navbar-transparente
+{
+    /* AUMENTANDO O ESPAÇO */
+    padding: 15px 0px;
+
+    /* ALTERANDO A COR DA BARRA E DEIXANDO-A MEIO TRANSPARENTE ALTERANDO A OPACIDADE */
+    background: rgba(0,0,0,0.6);
+
+    /* ALTERANDO A BORDA DO BOTTOM */
+    border:none;
+}
+
+.navbar-brand
+{
+    padding: 5px 15px;
+}
+.divisor
+{
+    width: 1px;
+    height: 15px;
+    background: white;
+    margin: 15px 16px;
+}
+
+/* SELECIONANDO O LINK DA MESMA MANEIRA QUE O BOOTSTRAP SELECIONA */
+.navbar-inverse .navbar-nav > li > a, #rodape .nav a {
+    color: white;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, #rodape .nav a:hover {
+    color: #9bf0e1;
+    background: none;
+}
+/* --BOTÕES -- */
+.btn-custom
+{
+    color: white;
+    border-radius: 500px;
+    -webkit-border-radius: 500px;
+    -moz-border-radius: 500px;
+    /* padding: 10px 35px;
+    margin:0px 15px; */
+    text-transform: uppercase;
+    transition: background 0.4s, color 0.4s;
+
+}
+
+.btn-roxo
+{
+    background: #7c25f8;
+}
+.btn-roxo:hover
+{
+    background: #6207e3;
+    color: white;
+}
+.btn-branco
+{
+    border: 2px solid white;
+}
+
+.btn-branco:hover
+{
+    background: white;
+    color: black;
+}
+/* ===================== CAPA PRINCIPAL ==================== */
+.capa
+{
+    /* border: 1px solid red; */
+    display: table;
+    width: 100%;
+
+}
+
+.texto-capa
+{
+    text-align: center;
+    color: white;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* -- SEÇÕES- SERVIÇOS -- */
+#servicos
+{
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.albuns
+{
+    padding: 10px 0px 10px 0px;
+}
+
+/* -- SEÇÕES- RECURSOS -- */
+#recursos
+{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.rotacionar
+{
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg); /*PARA FUNCIONAR NO IE 9*/
+    -webkit-transform: rotate(30deg);/* PARA FUNFAR NO CHROME, SAFARI, OPERA */
+    padding-left: 60px;
+
+}
+
+/* -- RODAPÉ -- */
+footer
+{
+    background: #000;
+    padding: 50px 0px 20px 0px;
+    position: relative;
+}
+.item-rede-social
+{
+    float: right;
+}
+/* ===================== TIPOGRAFIA ==================== */
+h1
+{
+    font-size: 100px;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    margin-bottom: 50px;
+}
+/* XS */
+@media screen and (max-width:768px)
+{
+    h1
+    {
+        font-size:50px;
+        transition: 1s;
+    }
+
+    .btn-custom
+    {
+        margin: 10px 15px;
+        transition: 1s;
+    }
+
+    
+}
+/* SM */
+@media screen and (min-width:768px)
+{
+    h1
+    {
+        font-size:70px;
+        transition: 1s;
+    }
+
+}
+/* MD */
+@media screen and (min-width:992px)
+{
+    h1
+    {
+        font-size:80px;
+        transition: 1s;
+    }
+
+}
+/* LG */
+@media screen and (min-width:1200px)
+{
+    h1
+    {
+        font-size:100px;
+        transition: 1s;
+    }
+
+   
+}
+
+
+h2
+{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+}
+h3
+{
+    font-size: 35px;
+    font-weight:  700;
+    letter-spacing: -0.04em;
+}
+#servicos h2, #servicos h3
+{
+    color: #7c25f8;
+}
+
+#recursos h3
+{
+    color: #9bf0e1;
+}
+
+#rodape h4
+{
+    color: #919496;
+    font-size: 12px;
+    text-transform: uppercase;
+}
